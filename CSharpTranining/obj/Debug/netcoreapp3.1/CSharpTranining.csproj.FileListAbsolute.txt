@@ -1,0 +1,13 @@
+C:\Users\Master\source\repos\CSharpTranining\CSharpTranining\obj\Debug\netcoreapp3.1\CSharpTranining.csproj.AssemblyReference.cache
+C:\Users\Master\source\repos\CSharpTranining\CSharpTranining\obj\Debug\netcoreapp3.1\CSharpTranining.AssemblyInfoInputs.cache
+C:\Users\Master\source\repos\CSharpTranining\CSharpTranining\obj\Debug\netcoreapp3.1\CSharpTranining.AssemblyInfo.cs
+C:\Users\Master\source\repos\CSharpTranining\CSharpTranining\obj\Debug\netcoreapp3.1\CSharpTranining.csproj.CoreCompileInputs.cache
+C:\Users\Master\source\repos\CSharpTranining\CSharpTranining\bin\Debug\netcoreapp3.1\CSharpTranining.exe
+C:\Users\Master\source\repos\CSharpTranining\CSharpTranining\bin\Debug\netcoreapp3.1\CSharpTranining.deps.json
+C:\Users\Master\source\repos\CSharpTranining\CSharpTranining\bin\Debug\netcoreapp3.1\CSharpTranining.runtimeconfig.json
+C:\Users\Master\source\repos\CSharpTranining\CSharpTranining\bin\Debug\netcoreapp3.1\CSharpTranining.runtimeconfig.dev.json
+C:\Users\Master\source\repos\CSharpTranining\CSharpTranining\bin\Debug\netcoreapp3.1\CSharpTranining.dll
+C:\Users\Master\source\repos\CSharpTranining\CSharpTranining\bin\Debug\netcoreapp3.1\CSharpTranining.pdb
+C:\Users\Master\source\repos\CSharpTranining\CSharpTranining\obj\Debug\netcoreapp3.1\CSharpTranining.dll
+C:\Users\Master\source\repos\CSharpTranining\CSharpTranining\obj\Debug\netcoreapp3.1\CSharpTranining.pdb
+C:\Users\Master\source\repos\CSharpTranining\CSharpTranining\obj\Debug\netcoreapp3.1\CSharpTranining.genruntimeconfig.cache
