@@ -1,12 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace CSharpTranining
 {
-   public class Test
+    class Test
     {
-        public static void HelloName (string name)
+        public static void HelloName(string name)
         {
-            Console.WriteLine("Hello " +name);
+            Console.WriteLine("Hello " + name);
         }
     }
 }

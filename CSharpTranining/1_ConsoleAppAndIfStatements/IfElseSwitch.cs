@@ -16,7 +16,7 @@ namespace CSharpTranining._1_ConsoleAppAndIfStatements
         private static string Answer3;
         private static string Answer4;
 
-        public static void RunLogic()
+        public static void Run()
         {
 
             Console.WriteLine(Question1);
