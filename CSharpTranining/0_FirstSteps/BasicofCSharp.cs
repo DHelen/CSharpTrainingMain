@@ -13,7 +13,7 @@ namespace CSharpTranining._0_FirstSteps
             value = " Have a nice day!";
 
             //Declare and assign
-            String value2 = " Have a Great day!";
+            //String value2 = " Have a Great day!";
 
             //Print Variable
             Test.HelloName("Elena," + value);
