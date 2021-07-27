@@ -2,6 +2,7 @@
 using CSharpTranining._1_ConsoleAppAndIfStatements;
 using CSharpTranining._2_Datatypes.ReferenceTypes;
 using CSharpTranining._2_Datatypes.ValueTypes;
+using CSharpTranining._3_Arrays;
 using System;
 
 namespace CSharpTranining
@@ -9,7 +10,7 @@ namespace CSharpTranining
     public class Program2
     {
 
-        private const string Question1 = "What lesson number you are interested in 1,2,3 ?";
+        private const string Question1 = "What lesson number you are interested in? :";
         private const string Question2 = "What type of data are you interested in ( 1. Referense 2. Value)? Please write the number ";
         private const string Question3 = "What would you like to choose 1.Object or 2.String?";
         private const string Question4 = "What would you like to choose: 1.Boolean, 2.Char, 3.Decimal, 4.Double, 5.Float 6.Integer 7.Long 8.Short?  Please write the number ";
@@ -21,6 +22,7 @@ namespace CSharpTranining
         private static string Answer4;
         public static void Main(string[] args)
         {
+           
             Console.Clear();
             Console.WriteLine(Question1);
             Answer1 = Console.ReadLine();
@@ -135,6 +137,10 @@ namespace CSharpTranining
                                     break;
                             }
                          }
+                        break;
+                    case 4:
+                        Console.WriteLine("You selected the Fourth Lesson!");
+                        SingleArrays.Run();
                         break;
                     default:
                         Console.WriteLine(NoSuchCaseMessage);
