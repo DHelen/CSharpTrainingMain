@@ -3,6 +3,7 @@ using CSharpTranining._1_ConsoleAppAndIfStatements;
 using CSharpTranining._2_Datatypes.ReferenceTypes;
 using CSharpTranining._2_Datatypes.ValueTypes;
 using CSharpTranining._3_Arrays;
+using CSharpTranining._4_Loop;
 using System;
 
 namespace CSharpTranining
@@ -141,6 +142,11 @@ namespace CSharpTranining
                     case 4:
                         Console.WriteLine("You selected the Fourth Lesson!");
                         SingleArrays.Run();
+                        break;
+                    case 5:
+                        Console.WriteLine("You selected the Fifth Lesson!");
+                       // ForLoop.Run();
+                        ForLoopRundom.RunForLoop();
                         break;
                     default:
                         Console.WriteLine(NoSuchCaseMessage);
