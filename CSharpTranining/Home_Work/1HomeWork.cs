@@ -13,6 +13,7 @@ namespace CSharpTranining.Home_Work
             Answer01 = Console.ReadLine();
             bool isInt = int.TryParse(Answer01, out int checkint);
             int quantity = Answer01.Length;
+            
 
             if (!isInt)
             { Console.WriteLine("It is Not Integer "); }
@@ -35,10 +36,16 @@ namespace CSharpTranining.Home_Work
                     {
                         amount[i] = int.Parse(charArr[i].ToString());
                     }
-                        
-                    int sum = (amount[0] + amount[1] + amount[2]);
-                    int sum2 = (amount[3] + amount[4] + amount[5]);
-
+                    int sum = 0;
+                        for ( int a=0; a< amount.Length/2; a++)
+                    {
+                        sum = sum + amount[a];
+                    }
+                    int sum2 = 0;
+                    for (int a = 3; a < amount.Length ; a++)
+                    {
+                        sum2 = sum2 + amount[a];
+                    }
                     if (sum == sum2)
                         Console.WriteLine("You have a lucky tiket! Your sum is " + sum);
                     else
