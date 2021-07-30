@@ -26,37 +26,17 @@ namespace CSharpTranining._3_Arrays
             bool[] arrayOfBooleans3 = new[] { true, false, false, true };
             Console.WriteLine("the last element of the bool array is " + arrayOfBooleans3[arrayOfBooleans3.Length - 1]);
 
-            for (int i = 0; i < arrayOfIntegers.Length; i++)
+            int[] arrayforloop = new int[20];
+
+            for ( int i = 0; i <arrayforloop.Length; i++)
             {
-                Console.WriteLine($"the {i + 1}th element of the array is  arrayOfIntegers {i}");
+                arrayforloop[i] = i;
+                //Console.WriteLine(arrayforloop[i]);
+                if (arrayforloop[i] % 2 == 0)
+                    Console.WriteLine($"{i} element is odd number");
+                
             }
-
-            Console.WriteLine("_______________________________");
-
-            for (int i = arrayOfIntegers.Length; i >= 0; i--)
-            {
-                Console.WriteLine($"the {i + 1}th element of the NEXT array is  arrayOfIntegers {i}");
-            }
-
-            Console.WriteLine("_______________________________");
-
-            int[] arrayOfIntegers2 = new int[5];
-
-            for (int a = 0; a < arrayOfIntegers2.Length; a++)
-            {
-                arrayOfIntegers2[a + 1] = a;
-                Console.WriteLine($" arrayOfInteger elemet {a} is {a}");
-            }
-            Console.WriteLine("_______________________________");
-            int[] arrayOfInteger3 = new int[20];
-             for (int i = 0; i < arrayOfInteger3.Length; i++)
-            {
-                if (arrayOfInteger3[i] % 2 == 0)
-                Console.WriteLine($"{i} is odd number ");
-            }
-
-
-
+            
 
         }
     }
