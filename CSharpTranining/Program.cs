@@ -146,9 +146,10 @@ namespace CSharpTranining
                         break;
                     case 5:
                         Console.WriteLine("You selected the Fifth Lesson!");
-                        _1HomeWork.Run();
+                        //_1HomeWork.Run();
                         // ForLoop.Run();
                         // ForLoopRundom.RunForLoop();
+                        _4HomeWork.Run();
                         break;
                     default:
                         Console.WriteLine(NoSuchCaseMessage);
