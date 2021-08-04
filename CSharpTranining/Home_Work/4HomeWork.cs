@@ -84,10 +84,5 @@ namespace CSharpTranining.Home_Work
                    
             }
         }
-
-        public static void Run2()
-        {
-
-        }
     }
 }
