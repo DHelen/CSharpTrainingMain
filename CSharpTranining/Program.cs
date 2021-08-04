@@ -16,12 +16,14 @@ namespace CSharpTranining
         private const string Question2 = "What type of data are you interested in ( 1. Referense 2. Value)? Please write the number ";
         private const string Question3 = "What would you like to choose 1.Object or 2.String?";
         private const string Question4 = "What would you like to choose: 1.Boolean, 2.Char, 3.Decimal, 4.Double, 5.Float 6.Integer 7.Long 8.Short?  Please write the number ";
+        private const string Question5 = "What HW would you like to choose: 1,2,3,4?";
         private const string NoSuchCaseMessage = "No such case. Please make sure you've selected correct item number";
         private const string NotIntegerMessage = "Answer should be in Integer";
         private static string Answer1;
         private static string Answer2;
         private static string Answer3;
         private static string Answer4;
+        private static string Answer5;
         public static void Main(string[] args)
         {
            
@@ -146,10 +148,37 @@ namespace CSharpTranining
                         break;
                     case 5:
                         Console.WriteLine("You selected the Fifth Lesson!");
-                        //_1HomeWork.Run();
-                        // ForLoop.Run();
-                        // ForLoopRundom.RunForLoop();
-                        _4HomeWork.Run();
+                        ForLoop.Run();
+                        ForLoopRundom.RunForLoop();
+                        break;
+                    case 6:
+                        Console.WriteLine("You selected the Home Works!");
+                        Console.WriteLine(Question5);
+                        Answer5 = Console.ReadLine();
+                        bool isIntcheck = int.TryParse(Answer5, out int hwnum);
+                        if (!isIntcheck)
+                            Console.WriteLine(NotIntegerMessage);
+                        else
+                        {
+                            switch (hwnum)
+                            {
+                                case 1:
+                                    Console.WriteLine("You choosed LuckyNumber");
+                                    _1HomeWork.Run();
+                                    break;
+                                case 2:
+                                    Console.WriteLine("You choosed List");
+                                    break;
+                                case 3:
+                                    Console.WriteLine("You choosed DoWhile");
+                                    _3HomeWork.Run();
+                                    break;
+                                case 4:
+                                    Console.WriteLine("You choosed Calculator");
+                                   _4HomeWork.Run();
+                                    break;
+                            } 
+                        }
                         break;
                     default:
                         Console.WriteLine(NoSuchCaseMessage);
