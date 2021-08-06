@@ -1,29 +1,51 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace CSharpTranining.Home_Work
 {
-    public class _1HomeWork
+    public class _1HWimprove
+
     {
-        public static void Run() 
+        public static void Run()
         {
-            string Sentence1 = "Please type a 6 digits number";
+            string Sentence1 = "Please check that you enter 6 digits number";
             string Answer01;
-            int total=0;
+            int total = 0;
             Console.WriteLine(Sentence1);
             Answer01 = Console.ReadLine();
             bool isInt = int.TryParse(Answer01, out int checkint);
             int quantity = Answer01.Length;
-            if (!isInt)
-            { Console.WriteLine("It is Not Integer "); }
+            if (!isInt || quantity != 6)
+            { 
+         while (isInt == false) 
+                {
+                    Console.WriteLine(Sentence1);
+                    Console.WriteLine("Not integer");
+                    Answer01 = Console.ReadLine();
+                    bool isInt2  = int.TryParse(Answer01, out int checkint2);
+                    Console.WriteLine(isInt2);
+                    quantity = Answer01.Length;
+                  
+                }
+                while (quantity != 6)
+                {
+                    isInt = int.TryParse(Answer01, out checkint);
+                    Console.WriteLine(Sentence1);
+                    Console.WriteLine("Not 6");
+                    Answer01 = Console.ReadLine();
+                    quantity = Answer01.Length;
+                    isInt = int.TryParse(Answer01, out checkint);
+
+                }
+                Answer01 = Console.ReadLine();
+                quantity = Answer01.Length;
+                isInt = int.TryParse(Answer01, out checkint);
+            }
 
             else
             {
-                if (quantity != 6)
-
-                { Console.WriteLine("Please check that you enter 6 digits number"); }
-
-                else
-                {
+               
                     Console.WriteLine("Lets continue");
 
                     char[] charArr = Answer01.ToCharArray();
@@ -50,11 +72,9 @@ namespace CSharpTranining.Home_Work
                     {
                         Console.WriteLine($"Try again! the sum of the first three numbers is not equal to the sum of the second three digits. There are  " + sum + " and " + sum2);
                     }
-
-
-
-                }
             }
         }
+    
+
     }
 }
