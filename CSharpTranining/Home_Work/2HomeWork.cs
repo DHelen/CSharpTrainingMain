@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace CSharpTranining.Home_Work
 {
     public class _2HomeWork
     {
+        
+
         public static void RunForEachLoop()
         {
             string[] movieNames = { "Mad Max", "The Rising Hawk", "Crocodile Dundee", "Winter on Fire", "The King" };
@@ -28,22 +31,25 @@ namespace CSharpTranining.Home_Work
                 new Movie("Crocodile Dundee", 1986, new []{"USA, Australia"}),
                 new Movie("The Rising Hawk", 1999, new []{"USA, Ukraine"}),
                 new Movie("Room", 2015, new []{"Canada, Ireland, United Kingdom, USA"}),
-                new Movie("Winter on Fire", 2015, new []{"Ukraine, United Kingdom, USA"}),
+                new Movie("Winter on Fire", 2015, new []{"Ukraine, United Kingdom,Australia, USA"}),
                 new Movie("Nayakan", 1987, new []{"India"}),
                 new Movie("Munich", 2005, new []{"USA, Canada"}),
-                new Movie("The King", 2019, new []{"USA, United Kingdom, Australia, "}),
+                new Movie("The King", 2019, new []{"USA, United Kingdom, Australia "}),
             };
 
 
 
             //Print movies from Australia (Template: Movie name - Release year - Country1, Country2, Country...n) 
             Console.WriteLine("Movies from Australia are:");
-            foreach (var Movie in movies)
-            {
-               
-                
+            for (int i = 0; i < movies.Length; i++)
+            { 
+                if (movies[i].Countries[0].Contains("Australia"))
+                {
+                    Console.WriteLine(movies[i].Name +" - "+ movies[i].ReleaseYear + " - "+movies[i].Countries[0]);
+                }
+
             }
-             
+
 
         }
     }

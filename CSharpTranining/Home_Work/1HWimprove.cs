@@ -26,9 +26,10 @@ namespace CSharpTranining.Home_Work
                     bool isInt2  = int.TryParse(Answer01, out int checkint2);
                     Console.WriteLine(isInt2);
                     quantity = Answer01.Length;
+                    break;
                   
                 }
-                while (quantity != 6)
+              while (quantity != 6)
                 {
                     isInt = int.TryParse(Answer01, out checkint);
                     Console.WriteLine(Sentence1);
@@ -36,6 +37,7 @@ namespace CSharpTranining.Home_Work
                     Answer01 = Console.ReadLine();
                     quantity = Answer01.Length;
                     isInt = int.TryParse(Answer01, out checkint);
+                    break;
 
                 }
                 Answer01 = Console.ReadLine();

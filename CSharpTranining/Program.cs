@@ -164,11 +164,12 @@ namespace CSharpTranining
                             {
                                 case 1:
                                     Console.WriteLine("You choosed LuckyNumber");
-                                    _1HomeWork.Run();
+                                    //_1HomeWork.Run();
                                     //_1HWimprove.Run();
                                     break;
                                 case 2:
                                     Console.WriteLine("You choosed List");
+                                    _2HomeWork.RunGetMoviesFromAustralia();
                                     break;
                                 case 3:
                                     Console.WriteLine("You choosed DoWhile");
