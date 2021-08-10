@@ -6,7 +6,7 @@ namespace CSharpTranining.Home_Work
 {
     public class _4HomeWork
     {
-        private const string NotIntegerMessage = "Value  should be in Integer";
+        private const string NotIntegerMessage = "Value  should be in Decimal ";
         private const string Q1 = "Please Enter  first value";
         private const string Q2 = "Please Enter  enter operation name: + or - or * or  / ";
         private const string Q3 = "Please Enter  second value";
@@ -18,28 +18,28 @@ namespace CSharpTranining.Home_Work
             Console.Clear();
             Console.WriteLine(Q1);
             Answer1 = Console.ReadLine();
-            bool isInt = int.TryParse(Answer1, out int firstvalue);
+            bool isInt = decimal.TryParse(Answer1, out decimal firstvalue);
 
             while (!isInt)
             {
                 Console.WriteLine(NotIntegerMessage);
                 Console.WriteLine(Q1);
                 Answer1 = Console.ReadLine();
-                isInt = int.TryParse(Answer1, out  firstvalue);
+                isInt = decimal.TryParse(Answer1, out  firstvalue);
 
             }
             Console.WriteLine(Q3);
             Answer3 = Console.ReadLine();
-            bool isInt2 = int.TryParse(Answer3, out int secondvalue);
+            bool isInt2 = decimal.TryParse(Answer3, out decimal secondvalue);
             while (!isInt2)
             {
                 Console.WriteLine(NotIntegerMessage);
                 Console.WriteLine(Q3);
                 Answer3 = Console.ReadLine();
-                isInt2 = int.TryParse(Answer3, out  secondvalue);
+                isInt2 = decimal.TryParse(Answer3, out  secondvalue);
             }
             bool g = false;
-            int sum = 0;
+            decimal sum = 0;
             while(g == false) 
                     {
                         Console.WriteLine(Q2);

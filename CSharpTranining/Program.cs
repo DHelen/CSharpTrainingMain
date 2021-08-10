@@ -164,7 +164,7 @@ namespace CSharpTranining
                             {
                                 case 1:
                                     Console.WriteLine("You choosed LuckyNumber");
-                                    //_1HomeWork.Run();
+                                    _1HomeWork.Run();
                                     //_1HWimprove.Run();
                                     break;
                                 case 2:
