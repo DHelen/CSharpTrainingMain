@@ -1,10 +1,11 @@
-﻿using System;
+﻿using CSharpTranining.Home_Work;
+using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace CSharpTranining.List
 {
-   public  class List
+    public  class List
     {
         public static void ListRunExample()
         {
