@@ -18,25 +18,25 @@ namespace CSharpTranining.Home_Work
             Console.Clear();
             Console.WriteLine(Q1);
             Answer1 = Console.ReadLine();
-            bool isInt = decimal.TryParse(Answer1, out decimal firstvalue);
+            bool isDec = decimal.TryParse(Answer1, out decimal firstvalue);
 
-            while (!isInt)
+            while (!isDec)
             {
                 Console.WriteLine(NotIntegerMessage);
                 Console.WriteLine(Q1);
                 Answer1 = Console.ReadLine();
-                isInt = decimal.TryParse(Answer1, out  firstvalue);
+                isDec = decimal.TryParse(Answer1, out  firstvalue);
 
             }
             Console.WriteLine(Q3);
             Answer3 = Console.ReadLine();
-            bool isInt2 = decimal.TryParse(Answer3, out decimal secondvalue);
-            while (!isInt2)
+            bool isDec2 = decimal.TryParse(Answer3, out decimal secondvalue);
+            while (!isDec2)
             {
                 Console.WriteLine(NotIntegerMessage);
                 Console.WriteLine(Q3);
                 Answer3 = Console.ReadLine();
-                isInt2 = decimal.TryParse(Answer3, out  secondvalue);
+                isDec2 = decimal.TryParse(Answer3, out  secondvalue);
             }
             bool g = false;
             decimal sum = 0;
