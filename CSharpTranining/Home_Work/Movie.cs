@@ -10,7 +10,7 @@ namespace CSharpTranining.Home_Work
         public int ReleaseYear { get; set; }
         public string[] Countries { get; set; }
 
-        public Movie()
+    public  Movie()
         {
         }
 
@@ -19,6 +19,12 @@ namespace CSharpTranining.Home_Work
             Name = name;
             ReleaseYear = releaseYear;
             Countries = countries;
+        }
+
+        public Movie(string name, int releaseYear)
+        {
+            Name = name;
+            ReleaseYear = releaseYear;
         }
     }
 }
